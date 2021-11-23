@@ -6,11 +6,11 @@ pipeline {
         sh 'COMPOSER_MEMORY_LIMIT=-1 composer install --ansi --prefer-dist --no-interaction --no-progress'
       }
     }
-    stage('tests:unit') {
-      steps {
-        sh 'php -d date.timezone=UTC ./vendor/bin/phpunit -c tests/Unit/phpunit.xml'
-      }
-    }
+#    stage('tests:unit') {
+#      steps {
+#        sh 'php -d date.timezone=UTC ./vendor/bin/phpunit -c tests/Unit/phpunit.xml'
+#      }
+#    }
     stage('build') {
       steps {
         sh 'docker-compose build'
