@@ -8,7 +8,7 @@ pipeline {
     }
     stage('tests:unit') {
       steps {
-        sh 'php -d date.timezone=UTC ./vendor/bin/phpunit -c tests/Unit/phpunit.xml'
+        sh 'SYMFONY_DEPRECATIONS_HELPER=disabled php -d date.timezone=UTC ./vendor/bin/phpunit -c tests/Unit/phpunit.xml'
       }
     }
     stage('build') {
