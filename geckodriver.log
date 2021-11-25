@@ -139,3 +139,36 @@ DevTools listening on ws://localhost:59063/devtools/browser/7eaf8292-3561-4d21-8
 
 ###!!! [Parent][RunMessage] Error: Channel closing: too late to send/recv, messages will be lost
 
+1637828106994	geckodriver	INFO	Listening on 127.0.0.1:60515
+1637828107536	mozrunner::runner	INFO	Running command: "/usr/bin/firefox" "--marionette" "--remote-debugging-port" "47771" "-no-remote" "-profile" "/tmp/rust_mozprofileOvC0ai"
+Running Firefox as root in a regular user's session is not supported.  ($XDG_RUNTIME_DIR is /run/user/1000 which is owned by daniel.)
+1637828116637	geckodriver	INFO	Listening on 127.0.0.1:42661
+1637828117149	mozrunner::runner	INFO	Running command: "/usr/bin/firefox" "--marionette" "--remote-debugging-port" "57735" "-no-remote" "-profile" "/tmp/rust_mozprofileuAANpX"
+Running Firefox as root in a regular user's session is not supported.  ($XDG_RUNTIME_DIR is /run/user/1000 which is owned by daniel.)
+1637828333899	geckodriver	INFO	Listening on 127.0.0.1:56129
+1637828333911	mozrunner::runner	INFO	Running command: "/usr/bin/firefox" "--marionette" "--remote-debugging-port" "54353" "-no-remote" "-profile" "/tmp/rust_mozprofileVuouv8"
+Running Firefox as root in a regular user's session is not supported.  ($XDG_RUNTIME_DIR is /run/user/1000 which is owned by daniel.)
+1637828402716	geckodriver	INFO	Listening on 127.0.0.1:54563
+1637828402731	mozrunner::runner	INFO	Running command: "/usr/bin/firefox" "--marionette" "--remote-debugging-port" "56565" "-no-remote" "-profile" "/tmp/rust_mozprofileBvfECW"
+Running Firefox as root in a regular user's session is not supported.  ($XDG_RUNTIME_DIR is /run/user/1000 which is owned by daniel.)
+1637828402861	geckodriver	INFO	Listening on 127.0.0.1:58389
+1637828403369	mozrunner::runner	INFO	Running command: "/usr/bin/firefox" "--marionette" "--remote-debugging-port" "40457" "-no-remote" "-profile" "/tmp/rust_mozprofilebF8C4w"
+Running Firefox as root in a regular user's session is not supported.  ($XDG_RUNTIME_DIR is /run/user/1000 which is owned by daniel.)
+1637828790980	geckodriver	INFO	Listening on 127.0.0.1:39715
+1637828790991	mozrunner::runner	INFO	Running command: "/usr/bin/firefox" "--marionette" "--remote-debugging-port" "51949" "-no-remote" "-profile" "/tmp/rust_mozprofileRmGhNx"
+Running Firefox as root in a regular user's session is not supported.  ($XDG_RUNTIME_DIR is /run/user/1000 which is owned by daniel.)
+1637829112723	geckodriver	INFO	Listening on 127.0.0.1:35105
+1637829112738	mozrunner::runner	INFO	Running command: "/usr/bin/firefox" "--marionette" "--remote-debugging-port" "56645" "-no-remote" "-profile" "/tmp/rust_mozprofilef0IRQk"
+Running Firefox as root in a regular user's session is not supported.  ($XDG_RUNTIME_DIR is /run/user/1000 which is owned by daniel.)
+1637829129721	geckodriver	INFO	Listening on 127.0.0.1:45967
+1637829129735	mozrunner::runner	INFO	Running command: "/usr/bin/firefox" "--marionette" "--remote-debugging-port" "54369" "-no-remote" "-profile" "/tmp/rust_mozprofileCaJeNZ"
+ATTENTION: default value of option mesa_glthread overridden by environment.
+ATTENTION: default value of option mesa_glthread overridden by environment.
+ATTENTION: default value of option mesa_glthread overridden by environment.
+ATTENTION: default value of option mesa_glthread overridden by environment.
+1637829138232	Marionette	INFO	Marionette enabled
+console.warn: SearchSettings: "get: No settings file exists, new profile?" (new NotFoundError("Could not open the file at /tmp/rust_mozprofileCaJeNZ/search.json.mozlz4", (void 0)))
+DevTools listening on ws://localhost:54369/devtools/browser/e528a49d-d69a-41b2-afb2-3ec426521844
+1637829150406	Marionette	INFO	Listening on port 41215
+1637829150611	RemoteAgent	WARN	TLS certificate errors will be ignored for this session
+1637829157999	Marionette	INFO	Stopped listening on port 41215

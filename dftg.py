@@ -18,6 +18,7 @@ class PythonOrgSearch(unittest.TestCase):
 # Le setUp fait partie de l'initialisation, cette méthode sera appelée avant chaque fonction de test que vous allez écrire dans cette classe de cas de test.
 # Ici, vous créez l'instance de Firefox WebDriver
 
+
     def setUp(self):
         self.driver = webdriver.Firefox()
 
@@ -26,12 +27,6 @@ class PythonOrgSearch(unittest.TestCase):
 
     def test_search_in_python_org(self):
         driver = self.driver
-
-# Test du 25/11/21
-
-    def setUp(self):
-        warnings.filterwarnings("ignore", category=ResourceWarning, message="unclosed.*<ssl.SSLSocket.*>") 
-
 
 # La méthode driver.get naviguera vers une page donnée par l'URL. 
 # WebDriver attendra que la page soit complètement chargée 
