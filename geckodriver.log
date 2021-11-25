@@ -118,3 +118,24 @@ DevTools listening on ws://localhost:36305/devtools/browser/bcdaab6a-dd3c-4524-a
 1637823322764	geckodriver	INFO	Listening on 127.0.0.1:38551
 1637823322778	mozrunner::runner	INFO	Running command: "/usr/bin/firefox" "--marionette" "--remote-debugging-port" "46959" "-no-remote" "-profile" "/tmp/rust_mozprofiletYS4Nw"
 Running Firefox as root in a regular user's session is not supported.  ($XDG_RUNTIME_DIR is /run/user/1000 which is owned by daniel.)
+1637824414829	geckodriver	INFO	Listening on 127.0.0.1:38413
+1637824414844	mozrunner::runner	INFO	Running command: "/usr/bin/firefox" "--marionette" "--remote-debugging-port" "40829" "-no-remote" "-profile" "/tmp/rust_mozprofileFxU8Hn"
+Running Firefox as root in a regular user's session is not supported.  ($XDG_RUNTIME_DIR is /run/user/1000 which is owned by daniel.)
+1637825289079	geckodriver	INFO	Listening on 127.0.0.1:60737
+1637825289092	mozrunner::runner	INFO	Running command: "/usr/bin/firefox" "--marionette" "--remote-debugging-port" "42777" "-no-remote" "-profile" "/tmp/rust_mozprofileHTkFhi"
+Running Firefox as root in a regular user's session is not supported.  ($XDG_RUNTIME_DIR is /run/user/1000 which is owned by daniel.)
+1637825328042	geckodriver	INFO	Listening on 127.0.0.1:42391
+1637825328055	mozrunner::runner	INFO	Running command: "/usr/bin/firefox" "--marionette" "--remote-debugging-port" "59063" "-no-remote" "-profile" "/tmp/rust_mozprofilenT5cqZ"
+ATTENTION: default value of option mesa_glthread overridden by environment.
+ATTENTION: default value of option mesa_glthread overridden by environment.
+ATTENTION: default value of option mesa_glthread overridden by environment.
+ATTENTION: default value of option mesa_glthread overridden by environment.
+1637825335190	Marionette	INFO	Marionette enabled
+console.warn: SearchSettings: "get: No settings file exists, new profile?" (new NotFoundError("Could not open the file at /tmp/rust_mozprofilenT5cqZ/search.json.mozlz4", (void 0)))
+DevTools listening on ws://localhost:59063/devtools/browser/7eaf8292-3561-4d21-87fc-47db7ef0d4b0
+1637825346757	Marionette	INFO	Listening on port 42385
+1637825346950	RemoteAgent	WARN	TLS certificate errors will be ignored for this session
+1637825396867	Marionette	INFO	Stopped listening on port 42385
+
+###!!! [Parent][RunMessage] Error: Channel closing: too late to send/recv, messages will be lost
+

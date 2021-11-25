@@ -27,6 +27,12 @@ class PythonOrgSearch(unittest.TestCase):
     def test_search_in_python_org(self):
         driver = self.driver
 
+# Test du 25/11/21
+
+    def setUp(self):
+        warnings.filterwarnings("ignore", category=ResourceWarning, message="unclosed.*<ssl.SSLSocket.*>") 
+
+
 # La méthode driver.get naviguera vers une page donnée par l'URL. 
 # WebDriver attendra que la page soit complètement chargée 
 # (c'est-à-dire que l'événement "onload" se soit déclenché) avant de rendre le contrôle à votre test ou script. 
