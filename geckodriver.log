@@ -115,3 +115,6 @@ DevTools listening on ws://localhost:36305/devtools/browser/bcdaab6a-dd3c-4524-a
 1637746162445	Marionette	INFO	Listening on port 44073
 1637746162597	RemoteAgent	WARN	TLS certificate errors will be ignored for this session
 1637746168465	Marionette	INFO	Stopped listening on port 44073
+1637823322764	geckodriver	INFO	Listening on 127.0.0.1:38551
+1637823322778	mozrunner::runner	INFO	Running command: "/usr/bin/firefox" "--marionette" "--remote-debugging-port" "46959" "-no-remote" "-profile" "/tmp/rust_mozprofiletYS4Nw"
+Running Firefox as root in a regular user's session is not supported.  ($XDG_RUNTIME_DIR is /run/user/1000 which is owned by daniel.)
