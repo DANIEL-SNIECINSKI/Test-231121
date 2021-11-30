@@ -23,18 +23,21 @@ pipeline {
     }
     stage('tests:functional') {
       steps {
-        sh 'python3 dftg.py'
+        sh 'python3 -m xmlrunner discover tests/Functional -o reports'
       }
       post {
         always {
           junit 'test-reports/*.xml'
         }
-      }    
+      }
     }
   }
    post {
       always {
          sh "docker-compose down || true"
       }
-   }   
+   }
+  environment {
+    SRV_QA = 'http://127.0.0.1:8001'
+  }
 }

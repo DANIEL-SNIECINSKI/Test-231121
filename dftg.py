@@ -29,39 +29,39 @@ class PythonOrgSearch(unittest.TestCase):
          self.driver = webdriver.Chrome()
 #        self.driver = webdriver.Chrome('/usr/bin/chromedriver', options=chrome_options)
 
-# C'est la méthode des cas de test. La méthode des cas de test doit toujours commencer par les caractères test . 
-# La première ligne à l'intérieur de cette méthode crée une référence locale à l'objet pilote créé dans la méthode setUp .       
+# C'est la méthode des cas de test. La méthode des cas de test doit toujours commencer par les caractères test .
+# La première ligne à l'intérieur de cette méthode crée une référence locale à l'objet pilote créé dans la méthode setUp .
 
     def test_search_in_python_org(self):
         driver = self.driver
 
-# La méthode driver.get naviguera vers une page donnée par l'URL. 
-# WebDriver attendra que la page soit complètement chargée 
-# (c'est-à-dire que l'événement "onload" se soit déclenché) avant de rendre le contrôle à votre test ou script. 
-# Sachez que si votre page utilise beaucoup d'AJAX au chargement, 
+# La méthode driver.get naviguera vers une page donnée par l'URL.
+# WebDriver attendra que la page soit complètement chargée
+# (c'est-à-dire que l'événement "onload" se soit déclenché) avant de rendre le contrôle à votre test ou script.
+# Sachez que si votre page utilise beaucoup d'AJAX au chargement,
 # WebDriver peut ne pas savoir quand elle est complètement chargée :
 
-        driver.get("http:127.0.0.1/prestashop/admin338j8tqkk")
+        driver.get("http://127.0.0.1/prestashop/admin338j8tqkk")
 
 # La ligne suivante est une assertion pour confirmer que le titre contient le mot "dftg":
 
         self.assertIn("dftg", driver.title)
 
-# Après la soumission de la page, vous devriez obtenir le résultat selon la recherche s'il y en a. 
+# Après la soumission de la page, vous devriez obtenir le résultat selon la recherche s'il y en a.
 # Pour vous assurer que certains résultats sont trouvés, faites une assertion :
 
         assert "No results found." not in driver.page_source
 
-# La méthode tearDown sera appelée après chaque méthode de test. 
-# C'est un endroit pour faire toutes les actions de nettoyage. Dans la méthode actuelle, la fenêtre du navigateur est fermée. 
-# Vous pouvez également appeler la méthode quit au lieu de close . 
-# Le quit va quitter le navigateur entier, alors à proximité se fermer un onglet, mais si elle est la seule onglet ouvert, 
+# La méthode tearDown sera appelée après chaque méthode de test.
+# C'est un endroit pour faire toutes les actions de nettoyage. Dans la méthode actuelle, la fenêtre du navigateur est fermée.
+# Vous pouvez également appeler la méthode quit au lieu de close .
+# Le quit va quitter le navigateur entier, alors à proximité se fermer un onglet, mais si elle est la seule onglet ouvert,
 # par défaut le plus navigateur va quitter entièrement .:
 
     def tearDown(self):
         self.driver.close()
 
-# Les lignes finales sont du code passe-partout pour exécuter la suite de tests :       
+# Les lignes finales sont du code passe-partout pour exécuter la suite de tests :
 
 if __name__ == "__main__":
     unittest.main()
