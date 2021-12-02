@@ -1,9 +1,10 @@
-from selenium.webdriver.firefox.options import Options as FirefoxOptions
-from selenium import webdriver
+chrome_options = webdriver.ChromeOptions()
+chrome_options.add_argument("--headless")
+chrome_options.add_argument("--disable-gpu")
+browser = webdriver.Chrome(options=chrome_options)
 
-options = FirefoxOptions()
-options.add_argument("--headless")
-driver = webdriver.Firefox(options=options)
-driver.get("http://google.com")
-print ("Headless Firefox Initialized")
-driver.quit()
+
+browser.get("https://www.google.com")
+"Page title was '{}'".format(browser.title)
+
+browser.quit()

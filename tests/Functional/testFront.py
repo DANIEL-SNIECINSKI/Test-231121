@@ -9,7 +9,8 @@ from selenium.webdriver.support import expected_conditions as EC
 class PrestaShopFrontOffice(unittest.TestCase):
 
   def setUp(self):
-    self.driver = webdriver.Chrome('/usr/bin/chromedriver')
+#    self.driver = webdriver.Chrome('/usr/bin/chromedriver')
+    self.driver = webdriver.Firefox('/usr/local/bin/geckodriver')
 
   def testHomepage(self):
     driver = self.driver
