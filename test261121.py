@@ -1,17 +1,11 @@
 import unittest
 from selenium import webdriver
 
-# Test du 30-11-21 (lignes 5-6-7)
-from selenium.webdriver.chrome.options import Options
-chrome_options = Options()
-chrome_options.add_argument("--headless")
-
-
 class TestUbuntuHomepage(unittest.TestCase):
 
     def setUp(self):
 #        self.browser = webdriver.Chrome()
-        self.browser = webdriver.Chrome(executable_path='/usr/bin/chromedriver')
+        self.browser = webdriver.Chrome(executable_path='/usr/local/bin/chromedriver')
         
     def testTitle(self):
         self.browser.get('http://www.ubuntu.com/')
