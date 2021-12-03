@@ -12,12 +12,12 @@ from selenium import webdriver
 
 # Tests du 021221
 
-from selenium.webdriver.chrome.options import Options
-chrome_options = Options()
-chrome_options.add_argument("--headless")
-chrome_options.add_argument('--no-sandbox')
-chrome_options.add_argument("--disable-dev-shm-usage")
-driver = webdriver.Chrome('/usr/bin/chromedriver', options=chrome_options)
+#from selenium.webdriver.chrome.options import Options
+#chrome_options = Options()
+#chrome_options.add_argument("--headless")
+#chrome_options.add_argument('--no-sandbox')
+#chrome_options.add_argument("--disable-dev-shm-usage")
+#driver = webdriver.Chrome('/usr/bin/chromedriver', options=chrome_options)
 
 # La classe Keys fournit des touches dans le clavier telles que RETURN, F1, ALT, etc.
 
@@ -35,7 +35,7 @@ class PythonOrgSearch(unittest.TestCase):
     def setUp(self):
 #        self.driver = webdriver.Firefox()
         self.driver = webdriver.Chrome()
-#         self.driver = webdriver.Chrome('/usr/local/bin/chromedriver', options=chrome_options)
+#         self.driver = webdriver.Chrome('/usr/bin/chromedriver', options=chrome_options)
 
 # C'est la méthode des cas de test. La méthode des cas de test doit toujours commencer par les caractères test .
 # La première ligne à l'intérieur de cette méthode crée une référence locale à l'objet pilote créé dans la méthode setUp .
