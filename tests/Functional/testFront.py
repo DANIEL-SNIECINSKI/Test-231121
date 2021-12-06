@@ -6,22 +6,23 @@ from selenium.webdriver.common.keys import Keys
 from selenium.webdriver.support.ui import WebDriverWait
 from selenium.webdriver.support import expected_conditions as EC
 
-# Test du 03-12-21 #######################################
+# Test du 06-12-21 #######################################
 
-#from selenium.webdriver.chrome.options import Options
-#chrome_options = Options()
-#chrome_options.add_argument("--headless")
+from selenium.webdriver.chrome.options import Options
+chrome_options = Options()
+chrome_options.add_argument("--headless")
 #chrome_options.add_argument("--disable-gpu")
 #chrome_options.add_argument("--remote-debugging-port9222")
-#chrome_options.add_argument('--no-sandbox')
-#chrome_options.add_argument("--disable-dev-shm-usage")
+chrome_options.add_argument('--no-sandbox')
+chrome_options.add_argument("--disable-dev-shm-usage")
+chrome_options.binary_location = '/usr/bin/google-chrome'
 
 ###########################################################
 
 class PrestaShopFrontOffice(unittest.TestCase):
 
   def setUp(self):
-    self.driver = webdriver.Chrome('/usr/local/bin/chromedriver')
+    self.driver = webdriver.Chrome('/usr/bin/chromedriver')
 
   def testHomepage(self):
     driver = self.driver

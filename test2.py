@@ -1,39 +1,18 @@
 from selenium import webdriver
-from urllib.parse import urljoin
+from selenium.webdriver.common.keys import Keys
 from selenium.webdriver.chrome.options import Options
 
-def navigate(driver, url, page_no):
-	driver.get(urljoin(url, str(page_no)))
+chrome_options = Options()
+chrome_options.add_argument('--headless')
+chrome_options.add_argument('--no-sandbox')
+chrome_options.add_argument('--disable-dev-shm-usage')
+chrome_options.binary_location = '/usr/bin/google-chrome'
 
+chrome_driver = '/usr/bin/chromedriver'
 
-def get_data(driver, class_name):
-	return driver.find_elements_by_class_name(class_name)
+driver = webdriver.Chrome(executable_path=chrome_driver, chrome_options=chrome_options)
+driver.get('https://box.attie.co.uk/')
+driver.save_screenshot('/tmp/screenshot.png')
 
-
-def has_data(data):
-	return len(data) > 0
-
-def parse_data(data, class_names):
-	for quote in data:
-		text = quote.find_element_by_class_name(class_names["text"]).text
-		author = quote.find_element_by_class_name(class_names["author"]).text
-		print("%s -- %s" %(text, author))
-
-def main():
-	options = Options()
-	options.add_argument('--headless')
-	driver = webdriver.Chrome(options=options)
-	url = "http://quotes.toscrape.com/page/"
-	page_no = 1
-	while True:
-		navigate(driver, url, page_no)
-		data = get_data(driver, "quote")
-		parse_data(data, {"text": "text", "author": "author"})
-		page_no += 1
-		if (has_data(data) == False):
-			break
-	driver.close()
-
-
-if __name__ == '__main__':
-	main()
+assert "my box..." in driver.page_source
+driver.close()
