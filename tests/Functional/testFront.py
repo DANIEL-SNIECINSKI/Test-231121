@@ -31,7 +31,8 @@ from selenium.webdriver.common.keys import Keys
 # La classe de cas de test est héritée de unittest.TestCase
 # Hériter de la classe TestCase est le moyen de dire au module unittest qu'il s'agit d'un cas de test
 
-class PythonOrgSearch(unittest.TestCase):
+#class PythonOrgSearch(unittest.TestCase):
+class admin_is_ready(unittest.TestCase):
 
 # Le setUp fait partie de l'initialisation, cette méthode sera appelée avant chaque fonction de test que vous allez écrire dans cette classe de cas de test.
 # Ici, vous créez l'instance de Firefox WebDriver
@@ -45,7 +46,8 @@ class PythonOrgSearch(unittest.TestCase):
 # C'est la méthode des cas de test. La méthode des cas de test doit toujours commencer par les caractères test .
 # La première ligne à l'intérieur de cette méthode crée une référence locale à l'objet pilote créé dans la méthode setUp .
 
-    def test_search_in_python_org(self):
+#    def test_search_in_python_org(self):
+    def test_results(self):
         driver = self.driver
 
 # La méthode driver.get naviguera vers une page donnée par l'URL.
