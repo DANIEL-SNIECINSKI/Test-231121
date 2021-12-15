@@ -37,6 +37,8 @@ pipeline {
       always {
          sh "docker-compose down || true"
       }
-    }
+   }
+  environment {
+    SRV_QA = 'http://127.0.0.1/prestashop/admin338j8tqkk'
   }
 }
